@@ -1,0 +1,40 @@
+public class Calculator
+{
+
+	public static void main(String[] args)
+	{
+		Double n1,n2;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n1 value");
+		 n1=sc.nextDouble();
+		 
+		 System.out.println("enter n2 value");
+		 n2=sc.nextDouble();
+		 
+		 System.out.println("enter operatin");
+		String op =sc.next();
+		 
+		switch (op)
+		{
+		case"+":System.out.println(n1+n2);
+		break;
+		case"-":System.out.println(n1-n2);
+		break;
+		case"/":System.out.println(n1/n2);
+		break;
+		case"%":System.out.println(n1%n2);
+		break;
+		case"*":System.out.println(n1*n2);
+		break;
+		case"value":System.out.println(n1+n2/n1);
+		break;
+		
+		default:System.out.println("none of these");
+		break;
+		
+		}
+
+	}
+
+}
